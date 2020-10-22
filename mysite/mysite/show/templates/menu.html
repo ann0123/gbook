@@ -1,0 +1,17 @@
+<html>
+  <head>
+  </head>
+  <body>
+      <h1>歡迎光臨我的網站</h1>
+      {% for food in foods %}
+      <p><a href="/show/food/{{forloop.counter}}">{{food}}</a></p>
+      <ul>
+      {% for meal in meal_list %} 
+      <l1>
+      <a href='/show/food/{{foreloup.counter}}'>{{ meal }}</l1>
+      {% endfor}
+      </ul>
+
+      </body>
+      
+</html>
