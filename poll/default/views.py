@@ -25,4 +25,9 @@ class PollVote (RedirectView):
         option.count += 1
         option.save()
         return'/poll/{}/'.format(option.poll_id)
-        return '/poll/'+str(option.poll_id)+'/'
+        #return '/poll/'+str(option.poll_id)+'/'
+
+class PollCreate(CreateView):
+    model=Poll
+    fields=['subject','description']
+    success_url='/poll/'
