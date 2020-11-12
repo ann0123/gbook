@@ -22,4 +22,4 @@ class Option(models.Model):
     count = models.IntegerField(default=0)
 
     def __str__(self):
-        return str(self.poll_id) + ": " + self.title
+        return str(self.poll_id) + ") " + self.title + "@"+ str(self.poll_id)
