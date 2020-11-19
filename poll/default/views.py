@@ -31,3 +31,14 @@ class PollCreate(CreateView):
     model=Poll
     fields=['subject','description']
     success_url='/poll/'
+
+class PollEdit(UpdateView):
+    model = Poll
+    fields='__all__'
+    success_url='/poll/'
+    
+
+class PollDelete(DeleteView):
+    model = Poll
+    fields='__all__'
+    success_url='/poll/'
