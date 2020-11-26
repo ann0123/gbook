@@ -9,6 +9,7 @@
             {{ poll.date_created }} - 
             <a href="/poll/{{poll.id}}/">{{ poll.subject }}</a></li>
              <a href="/poll/{{poll.id}}/edit/">修改</a>
+             <a href="/poll/{{poll.id}}/delete/">刪除</a>
         {% endfor %}
     </ul>
 {% endblock %}

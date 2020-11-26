@@ -17,7 +17,7 @@ class Option(models.Model):
     # 此選項屬於哪一個投票
     poll_id = models.IntegerField('所屬投票主題編號')
     # 選項文字
-    title = models.CharField('逕項標題',max_length=200)
+    title = models.CharField('選項標題',max_length=200)
     # 此選項被投票數
     count = models.IntegerField(default=0)
 
