@@ -12,4 +12,5 @@ urlpatterns = [
     path('poll/<int:pk>/add/',OptionAdd.as_view()),
     path('option/<int:pk>/edit/',OptionEdit.as_view()),
     path('option/<int:pk>/delete/',OptionDelete.as_view()),
+    path('', RedirectView.as_view(url='/poll/'))
 ]
