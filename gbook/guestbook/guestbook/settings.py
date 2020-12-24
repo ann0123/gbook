@@ -20,12 +20,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '5-s-a5e7v686ngu_ct72yp$@ox-z1f2g#67ck+l$(a##mpo1yx'
+SECRET_KEY = 'hg#+_fiu_1vziy%4v*0+^!uzst1vpmdax&)5pzk5ct^6s26+tn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -120,9 +120,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-LOGIN_REDIRECT_URL='/'
 
-LOGOUT_REDIRECT_URL='/'
+LOGIN_REDIRECT_URL = '/'
 
-
-
+LOGOUT_REDIRECT_URL = '/'
